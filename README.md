@@ -17,7 +17,7 @@ increment the number on every click
 
 listen to click event using ID 
 
-add event listener for click - after click pass it to counterIncrement function , options field is false//MDN Docs
+add event listener for click - after click pass it to counterIncrement function , options field is false//MDN Docs - **READ ABOUT IT FROM MDN**
 
 //function to increment a number
 counterIncrement -> This will do counter and increment
@@ -43,11 +43,36 @@ counter element is not needed as we're adding from button now , so button id nee
 
 
 //convert input to number from text
-parseInt
+*parseInt
 
-//Console.log({ loggedThing }) -> to see it in the form of Key/Value Pair
+-> *Console.log({ loggedThing }) -> to see it in the form of Key/Value Pair
 
 //add to total totalexpense = totalexpense+expense;
+
+## Stage Four - Writing to DOM
+
+We don't want output on console, we either want it on top or bottom.
+
+We add it to top using h1 tag and show 0
+
+Flex CSS -> https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+flex direction column we gave to put heading element on top of input element
+
+// We need to get heading element 
+*querySelector
+
+//We need to set heading element to totalExpense - After initial 0 value
+GettingValuefromHeading.textContent = value to set to
+
+
+//We need to set the heading expense to totalExpense - After adding
+
+*textContent - **READ ABOUT IT FROM MDN**
+
+
+
+
 
 
 
