@@ -43,8 +43,13 @@ counter element is not needed as we're adding from button now , so button id nee
 
 
 //convert input to number from text
+parseInt
 
-//add to total totalexpense
+//Console.log({ loggedThing }) -> to see it in the form of Key/Value Pair
+
+//add to total totalexpense = totalexpense+expense;
+
+
 
 
 
