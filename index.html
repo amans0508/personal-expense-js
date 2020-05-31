@@ -15,19 +15,21 @@
   </head>
   <body>
     <button id="addExpense">+</button>
-    <input type="text" />
+    <input type="text" id="expenseText" />
     <script>
       //take a number which starts from 0
-      let counter = 0;
-      //get the button element
-      const expense = document.querySelector("#addExpense");
-      //Add number everytime button is clicked
-      function counterIncrement() {
-        counter = counter + 1;
-        console.log(counter);
+      let totalExpense = 0;
+
+      function addExpenseToTotal() {
+        //get the button element
+        const expense = document.querySelector("#expenseText");
+        let initialExpense = parseInt(expense.value, 10);
+        totalExpense = totalExpense + initialExpense;
       }
 
-      expense.addEventListener("click", counterIncrement, false);
+      //Add number everytime button is clicked
+      const expenseAdd = document.querySelector("#addExpense");
+      expenseAdd.addEventListener("click", addExpenseToTotal, false);
     </script>
   </body>
 </html>
