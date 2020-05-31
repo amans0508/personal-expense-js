@@ -70,6 +70,32 @@ GettingValuefromHeading.textContent = value to set to
 
 *textContent - **READ ABOUT IT FROM MDN**
 
+## Stage Five - Arrays & Objects
+
+Moving Towards creating the application.
+We need to learn how to store data using Array and Objects
+
+Need a new text type input element - Description
+Get Description element as well
+
+On click read description as well
+
+Improve function remove references out of it and read its *value* 
+
+//Get both Description and Amount
+
+Now we need to store both these values somewhere?
+-> JavaScript Object **READ ABOUT IT FROM MDN** *how to read by dot notation and [] notation
+
+We create an expense object
+{desc:"" , amount: xxx}
+
+-> JavaScript Array **READ ABOUT IT FROM MDN**
+To add in Array -> *arr.push* 
+
+
+
+
 
 
 
