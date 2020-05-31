@@ -22,4 +22,29 @@ add event listener for click - after click pass it to counterIncrement function 
 //function to increment a number
 counterIncrement -> This will do counter and increment
 
-Add an input element
+**Make sure not to put () after function call in event listener
+
+Add an input element type text
+
+## Stage Three - Reading from Input
+
+input element has an ID now
+
+counter element is not needed as we're adding from button now , so button id needed for query selection
+// init value of expense at 0
+-> totalExpense
+
+//onbuttonclick add input amount to totalexpense
+-> function addExpenseToTotal
+
+//we need to read value from input amount
+-> We use query selector to get button
+-> get value() from button
+
+
+//convert input to number from text
+
+//add to total totalexpense
+
+
+
