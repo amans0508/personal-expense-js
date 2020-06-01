@@ -93,8 +93,21 @@ We create an expense object
 -> JavaScript Array **READ ABOUT IT FROM MDN**
 To add in Array -> *arr.push* 
 
+## Stage Six - Processing Data on User Action
 
+We need to have an array outside function having all data, at one place.
 
+*var Vs let Vs const* **READ ABOUT IT FROM MDN**
+
+Once we have the description and the number :
+We put in the Object .. key value pair .. .desc and .amount 
+
+push it in array 
+
+//Now we put the Object inside the Array
+
+*console.table* after the push **READ ABOUT IT FROM MDN**
+*console.clear*
 
 
 
