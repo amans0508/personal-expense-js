@@ -17,6 +17,7 @@
   <body>
     <h1 id="expenseDisplay"></h1>
     <input type="text" id="expenseText" />
+    <input type="text" id="expenseDesc" />
     <button id="addExpense">+</button>
     <script>
       //take a number which starts from 0
@@ -24,13 +25,22 @@
       //Display this in the heading tag
       const displayExpenseHeading = document.querySelector("#expenseDisplay");
       let showAddedExpense = (displayExpenseHeading.textContent = totalExpense);
+      //get the button element
+      const allExpense = [];
+
+      const expense = document.querySelector("#expenseText");
+      const expenseDesc = document.querySelector("#expenseDesc");
 
       function addExpenseToTotal() {
-        //get the button element
-        const expense = document.querySelector("#expenseText");
+        const singleExpense = {};
         let initialExpense = parseInt(expense.value, 10);
+        let expenseDescValue = expenseDesc.value;
         totalExpense = totalExpense + initialExpense;
+        singleExpense.desc = expenseDescValue;
+        singleExpense.amt = totalExpense;
         showAddedExpense = displayExpenseHeading.textContent = totalExpense;
+        allExpense.push(singleExpense);
+        console.table(allExpense);
       }
 
       //Add number everytime button is clicked
