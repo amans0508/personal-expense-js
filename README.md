@@ -109,6 +109,9 @@ push it in array
 *console.table* after the push **READ ABOUT IT FROM MDN**
 *console.clear*
 
+## Stage Seven -  Templating in JavaScript
+
+
 
 
 
