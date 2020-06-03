@@ -11,6 +11,7 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
+        background-color: #515151;
       }
     </style>
   </head>
@@ -19,32 +20,50 @@
     <input type="text" id="expenseText" />
     <input type="text" id="expenseDesc" />
     <button id="addExpense">+</button>
+    <div id="tableOutput"></div>
     <script>
       //take a number which starts from 0
       let totalExpense = 0;
-      //Display this in the heading tag
-      const displayExpenseHeading = document.querySelector("#expenseDisplay");
-      let showAddedExpense = (displayExpenseHeading.textContent = totalExpense);
-      //get the button element
       const allExpense = [];
+      let printExpense;
 
+      //get the h1 element
+      const displayExpenseHeading = document.querySelector("#expenseDisplay");
+      //get the Expense input element
       const expense = document.querySelector("#expenseText");
+      //get the Description input element
       const expenseDesc = document.querySelector("#expenseDesc");
+      //get the button element
+      const expenseAdd = document.querySelector("#addExpense");
+
+      const outputTable = document.querySelector("#tableOutput");
+
+      //Initial heading value will be 0
+      let showAddedExpense = (displayExpenseHeading.textContent = totalExpense);
 
       function addExpenseToTotal() {
         const singleExpense = {};
         let initialExpense = parseInt(expense.value, 10);
         let expenseDescValue = expenseDesc.value;
+        //Add number everytime button is clicked
         totalExpense = totalExpense + initialExpense;
         singleExpense.desc = expenseDescValue;
         singleExpense.amt = totalExpense;
         showAddedExpense = displayExpenseHeading.textContent = totalExpense;
         allExpense.push(singleExpense);
-        console.table(allExpense);
-      }
 
-      //Add number everytime button is clicked
-      const expenseAdd = document.querySelector("#addExpense");
+        const firstExpense = allExpense[0];
+        const secondExpense = allExpense[1];
+
+        let printFirstExpense = `The Expense is ${firstExpense.amt} :: The Description is ${firstExpense.desc}`;
+        let printSecondExpense = `The Expense is ${secondExpense.amt} :: The Description is ${secondExpense.desc}`;
+
+        let tableToShow = `<div>${printFirstExpense}</div>
+<div>${printSecondExpense}</div>
+`;
+
+        let showFinalTable = (outputTable.innerHTML = tableToShow);
+      }
       expenseAdd.addEventListener("click", addExpenseToTotal, false);
     </script>
   </body>
