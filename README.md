@@ -114,6 +114,20 @@ push it in array
 
 *innerHTML Vs textContent()* **READ ABOUT IT FROM MDN**
 
+## Stage Eight -  Looping and generating HTML from JavaScript
+
+*map* - Map takes a **callback function  **READ ABOUT IT FROM MDN**
+
+*Lambda Function **READ ABOUT IT FROM MDN** https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+
+We were printing 2 items, we don't need it anymore. Now we'll be using the map method to iterate over the *allExpense* array and callback the <div> with the expense.amt and expense.desc </div> and we store it in some const.
+
+Then we will have to join the Array  using **.join()** store this also in a const.
+
+So basically we take an array of objects map it to return array of string, then we do a join which returns a string 
+
+join("") to return string , join() -> So ("") here we're giving a string on which it will join whereas in join() it will take a comma as we didn't give anything
+
 
 
 
