@@ -110,7 +110,9 @@ push it in array
 *console.clear*
 
 ## Stage Seven -  Templating in JavaScript
+//Print a complete table on the DOM
 
+*innerHTML Vs textContent()* **READ ABOUT IT FROM MDN**
 
 
 
