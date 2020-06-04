@@ -52,17 +52,13 @@
         showAddedExpense = displayExpenseHeading.textContent = totalExpense;
         allExpense.push(singleExpense);
 
-        const firstExpense = allExpense[0];
-        const secondExpense = allExpense[1];
-
-        let printFirstExpense = `The Expense is ${firstExpense.amt} :: The Description is ${firstExpense.desc}`;
-        let printSecondExpense = `The Expense is ${secondExpense.amt} :: The Description is ${secondExpense.desc}`;
-
-        let tableToShow = `<div>${printFirstExpense}</div>
-<div>${printSecondExpense}</div>
-`;
-
-        let showFinalTable = (outputTable.innerHTML = tableToShow);
+        const allDisplayElements = allExpense.map(
+          (singleExpense) =>
+            `<div>${singleExpense.amt}</div>
+            <div>${singleExpense.desc}</div>`
+        );
+        const returnedExpenses = allDisplayElements.join("");
+        let showFinalTable = (outputTable.innerHTML = returnedExpenses);
       }
       expenseAdd.addEventListener("click", addExpenseToTotal, false);
     </script>
